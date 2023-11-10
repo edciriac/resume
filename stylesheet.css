@@ -1,0 +1,51 @@
+@page {
+    size: A4;
+}
+
+/* div {
+    page-break-after: always;
+} */
+
+/* body {
+    aspect-ratio: 1/1.41421;
+    background-color: aqua;
+} */
+
+
+#paper {
+    margin: auto;
+    aspect-ratio: 1/1.41421;
+    background-color: gainsboro;
+    max-height: 98vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#paper div {
+    /* background-color: aqua; */
+    border: 1px dashed black;
+}
+
+#bio {
+    flex-grow: 1.5;
+}
+#bar {
+    flex-grow: 0.3;
+}
+#content {
+    flex-grow: 8;
+    display: flex;
+}
+
+#content div:nth-child(1){
+    width: min-content;
+    flex-grow: 2;
+    /* background-color: aqua; */
+    border: none;
+}
+#content div:nth-child(2){
+    width: min-content;
+    flex-grow: 1;
+    /* background-color: aqua; */
+    border: solid 1px black;
+}
