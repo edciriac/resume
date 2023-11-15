@@ -5,46 +5,68 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
 }
+.subheading{
+    font-size: 1.25em;
+    font-weight: bolder;
+    margin: 0.5em 0;
+    color: rgb(1, 121, 121);
+    /* text-decoration: dotted underline ; */
+}
+.subheading::after{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 1.5px;
+    margin-left: -5px;
+    margin-top: 0.15em;
+    background-color: rgb(1, 121, 121);
+}
 h1{
     font-size: 1.5em;
 }
 h2{
     font-size: 1.25em;
+    font-weight: bold;
+    color: rgb(80, 80, 80);
 }
 h3{
     font-size: 0.8em;
     font-weight: normal;
     font-style: italic;
 }
+h4{
+    color: rgb(80, 80, 80);
+    font-size: 1em;
+    font-weight: normal;
+}
 p, li{
     font-size: 0.75em;
     font-weight: normal;
 }
-a[href^="http"] {
+a {
     background: url("media/icons/external-link.svg") no-repeat top right;
-    background-size: 13px 13px;
-    padding-right: 15px;
+    background-size: 9px 9px;
+    padding-right: 10px;
     text-decoration: none;
     color: black;
   }
-a[href^="http"]:hover {
+h2 a {
+    color: rgb(80, 80, 80);
+}
+a:hover {
         text-decoration: underline;
     }
 
 #paper {
     margin: auto;
     aspect-ratio: 1/1.41421;
-    background-color: gainsboro;
-    max-height: 98vh;
+    background-color: #ffffffbd;
+    max-height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0px 0px 10px 0px;
     padding: 5px;
-}
-#paper div {
-    /* background-color: aqua; */
-    border: 1px dashed black;
 }
 
 #bio {
@@ -70,10 +92,11 @@ a[href^="http"]:hover {
     flex-direction: row;
     justify-content: center ;
     align-items: center;
+    background-color: darkcyan;
+    margin: 0 -5px ;
+    padding: 0.25em 0;
 }
-/* #bar * {
-    font-size: 0.9em;
-} */
+
 #bar div{
     display: flex;
     flex-direction: row;
@@ -86,10 +109,15 @@ a[href^="http"]:hover {
     margin-right: 0.25em;
 }
 
+#bar{
+    font-size: 0.8em;
+}
+
 
 #content {
     flex-grow: 8;
     display: flex;
+    gap: 1em;
 }
 
 #jobed{
@@ -102,20 +130,26 @@ a[href^="http"]:hover {
 }
 #skills{
     width: min-content;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     /* background-color: aqua; */
-    border: solid 1px black;
+    /* border: solid 1px black; */
+    display: flex;
+    flex-direction: column;
+    
 }
-
-.subheading{
-    font-size: 1.25em;
-    font-weight: bold;
-    margin: 0.5em 0;
+/* #skills article{
+    padding: 1em 0em;
+} */
+#skills .subheading::after{
+    width: 100%;
+    padding-right: 10px;
 }
 
 ul {
     margin: 0;
     padding-left: 1em;
+    padding-top: 0.5em;
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
+
