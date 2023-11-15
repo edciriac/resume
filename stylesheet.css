@@ -56,7 +56,16 @@ p{
 }
 #bar {
     flex-grow: 0.3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    align-items: center;
 }
+#bar * {
+    font-size: 0.9em;
+}
+
+
 #content {
     flex-grow: 8;
     display: flex;
