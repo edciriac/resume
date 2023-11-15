@@ -61,8 +61,19 @@ p{
     justify-content: center ;
     align-items: center;
 }
-#bar * {
+/* #bar * {
     font-size: 0.9em;
+} */
+#bar div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.9em;
+    margin-right: 0.5em;
+}
+#bar div img{
+    height: 1em;
+    margin-right: 0.25em;
 }
 
 
