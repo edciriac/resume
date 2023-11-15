@@ -20,6 +20,16 @@ p, li{
     font-size: 0.75em;
     font-weight: normal;
 }
+a[href^="http"] {
+    background: url("media/icons/external-link.svg") no-repeat top right;
+    background-size: 13px 13px;
+    padding-right: 15px;
+    text-decoration: none;
+    color: black;
+  }
+a[href^="http"]:hover {
+        text-decoration: underline;
+    }
 
 #paper {
     margin: auto;
