@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6, p {
 .subheading{
     font-size: 1.25em;
     font-weight: bolder;
-    margin: 0.5em 0;
+    margin-bottom: 0.5em;
     color: rgb(1, 121, 121);
     /* text-decoration: dotted underline ; */
 }
@@ -128,6 +128,13 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
+#jobed div, #skills div{
+    margin-top: 0.5em;
+}
+#jobed > div:hover, #skills > div:hover{
+    border-left:rgb(1, 121, 121) 5px solid;    
+}
+
 #skills{
     width: min-content;
     /* flex-grow: 1; */
