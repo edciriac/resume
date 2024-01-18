@@ -144,9 +144,7 @@ a:hover {
     flex-direction: column;
     
 }
-/* #skills article{
-    padding: 1em 0em;
-} */
+
 #skills .subheading::after{
     width: 100%;
     padding-right: 10px;
@@ -160,3 +158,6 @@ ul {
     margin-block-end: 0em;
 }
 
+ul :last-child{
+    padding-bottom: 0.5em;
+}

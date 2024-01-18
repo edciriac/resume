@@ -5,3 +5,11 @@
 	background: transparent; 
 	text-decoration: underline; 
 }
+
+#paper{
+	aspect-ratio: 1/1.41421;
+}
+
+.pagebreak{
+	break-after: page;
+}
