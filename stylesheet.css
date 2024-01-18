@@ -5,6 +5,7 @@
     --accent-color:  rgb(1, 173, 173);
     --accent-color-darker: rgb(1, 150, 150);
     --heading-color: rgb(80, 80, 80);
+    --indent-amount: 4vw;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -18,6 +19,9 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--accent-color-darker);
     /* text-decoration: dotted underline ; */
 }
+#jobed .subheading {
+    text-indent: var(--indent-amount);
+}
 .subheading::after{
     content: "";
     display: block;
@@ -26,6 +30,9 @@ h1, h2, h3, h4, h5, h6, p {
     margin-left: -5px;
     margin-top: 0.15em;
     background-color: var(--accent-color-darker);
+}
+article>h4,article>h3, article>h2{
+    margin-left: var(--indent-amount);
 }
 h1{
     font-size: 1.5em;
@@ -79,7 +86,7 @@ a:hover {
     flex-grow: 1.5;
     display: flex;
     align-items: center;
-    max-height: 4em;
+    max-height: 5.5em;
     margin-bottom: 0.5em;
     gap: 1em;
     /* overflow: scroll; */
@@ -158,10 +165,11 @@ a:hover {
 
 ul {
     margin: 0;
-    padding-left: 1em;
+    padding-left: 0.8em;
     padding-top: 0.5em;
     margin-block-start: 0em;
     margin-block-end: 0em;
+    margin-left: var(--indent-amount);
 }
 
 ul :last-child{
