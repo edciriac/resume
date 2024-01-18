@@ -9,7 +9,6 @@ body, html{
 	content: " (" attr(href)")"; 
 	font-size: 90%; 
 	background: transparent; 
-	text-decoration: underline; 
 }
 
 #paper{
